@@ -13,7 +13,7 @@ public class Main {
         linkedList.append(8);
         linkedList.printList();
 
-        linkedList.removeLastNode();
+        linkedList.removeLast();
         System.out.println("After remove");
         linkedList.printList();
 

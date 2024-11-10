@@ -18,7 +18,7 @@ public class BinarySearchTree {
         }
     }
 
-    boolean insert(int value) {
+    public boolean insert(int value) {
         Node newNode = new Node(value);
         if (root == null) {
             root = newNode;

@@ -54,12 +54,11 @@ public class LinkedList {
         length++;
     }
 
-    Node removeLastNode() {
+    public Node removeLast() {
         if (length == 0) return null;
         Node temp = head;
         Node pre = head;
-
-        while (temp.next != null) {
+        while(temp.next != null) {
             pre = temp;
             temp = temp.next;
         }
@@ -68,7 +67,7 @@ public class LinkedList {
         length--;
         if (length == 0) {
             head = null;
-            temp = null;
+            tail = null;
         }
         return temp;
     }
@@ -144,7 +143,7 @@ public class LinkedList {
             return removeFirst();
         }
         if (index == length) {
-            return removeLastNode();
+            return removeLast();
         }
         Node pre = get(index - 1);
         Node temp = pre.next;

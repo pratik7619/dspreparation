@@ -39,14 +39,13 @@ public class Graph {
         return false;
     }
 
-    void removeVertex(String vertex) {
-        if (adjList.get(vertex) == null) return;
+    public boolean removeVertex(String vertex) {
+        if (adjList.get(vertex) == null) return false;
         for (String otherVertex : adjList.get(vertex)) {
-            if (adjList.get(otherVertex) != null) {
-                adjList.get(otherVertex).remove(vertex);
-            }
+            adjList.get(otherVertex).remove(vertex);
         }
         adjList.remove(vertex);
+        return true;
     }
 
     void put(String key, String value) {
