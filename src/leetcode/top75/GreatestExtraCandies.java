@@ -5,7 +5,7 @@ import java.util.List;
 
 public class GreatestExtraCandies {
 
-    static List<Boolean>  kidsWithExtraCandies(int[] candies, int extraCandies) {
+    static List<Boolean> kidsWithExtraCandies(int[] candies, int extraCandies) {
 
         List<Boolean> results = new ArrayList<>();
         int maxCandies = 0;
@@ -23,7 +23,7 @@ public class GreatestExtraCandies {
     public static void main(String[] args) {
         System.out.println(
                 kidsWithExtraCandies(
-                        new int[] {2,3,5,1,3},
+                        new int[]{2, 3, 5, 1, 3},
                         3
                 )
         );
